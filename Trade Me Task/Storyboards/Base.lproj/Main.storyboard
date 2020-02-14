@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xWg-Fv-RcD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="lkd-hK-MFD">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="w1o-xD-KjH" customClass="SearchTableViewController" customModule="Trade_Me_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="bd4-5x-oKb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="dataSource" destination="w1o-xD-KjH" id="MAL-85-6hH"/>
+                            <outlet property="delegate" destination="w1o-xD-KjH" id="7Cj-xd-M1W"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="gWW-Ha-zhF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paG-UO-DbD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628" y="-184"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mFX-ue-Df6">
+            <objects>
+                <navigationController id="x8y-vz-sqM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZTX-w2-7Vo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="w1o-xD-KjH" kind="relationship" relationship="rootViewController" id="6AK-ee-3jY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PI9-eq-MF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="-184"/>
+        </scene>
+        <!--Base Split View Controller-->
+        <scene sceneID="TkV-Ea-Qq5">
+            <objects>
+                <splitViewController id="xWg-Fv-RcD" customClass="BaseSplitViewController" customModule="Trade_Me_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="x8y-vz-sqM" kind="relationship" relationship="masterViewController" id="zIF-L1-zDt"/>
+                        <segue destination="YMy-BN-vxa" kind="relationship" relationship="detailViewController" id="GRz-9O-cv7"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLF-l3-My3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="141"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TcF-Q6-6Q7">
+            <objects>
+                <navigationController id="YMy-BN-vxa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="50x-aN-zxh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aKC-vn-JVy" kind="relationship" relationship="rootViewController" id="s4w-Ki-DsU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEc-Yz-Shs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707" y="463"/>
+        </scene>
+        <!--Listing Detail View Controller-->
+        <scene sceneID="ZkS-ia-wdG">
+            <objects>
+                <tableViewController storyboardIdentifier="ListingDetailViewController" id="aKC-vn-JVy" customClass="ListingDetailViewController" customModule="Trade_Me_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9hD-Qe-YvM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="dataSource" destination="aKC-vn-JVy" id="Q7M-Rf-yxe"/>
+                            <outlet property="delegate" destination="aKC-vn-JVy" id="AWs-uk-3Lz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MFP-U4-rdo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJ6-J1-F3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628" y="463"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DZNEmptyDataSet (1.8.1)
+  - ImageSlideshow/Core (1.8.3)
+  - ImageSlideshow/Kingfisher (1.8.3):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - Kingfisher (5.13.0):
+    - Kingfisher/Core (= 5.13.0)
+  - Kingfisher/Core (5.13.0)
+  - PKHUD (5.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DZNEmptyDataSet
+  - ImageSlideshow/Kingfisher
+  - Kingfisher
+  - PKHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DZNEmptyDataSet
+    - ImageSlideshow
+    - Kingfisher
+    - PKHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
+  Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+
+PODFILE CHECKSUM: dbad79b0a5dd1800b4a270fd5913f8c8a279c566
+
+COCOAPODS: 1.6.1

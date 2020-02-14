@@ -1,0 +1,6 @@
+framework module Pods_Trade_Me_TaskTests {
+  umbrella header "Pods-Trade Me TaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
