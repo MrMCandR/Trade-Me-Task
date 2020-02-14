@@ -7,20 +7,24 @@ A native, universal iOS application built for browsing the Trade Me service.
   - Universal layout optimised for all size classes
   - Fully localised application copy
 
-![kevin](./Trade Me Task/screenshots/kevin.png)
+![kevin](https://github.com/MrMCandR/Trade-Me-Task/blob/master/screenshots/kevin.png)
 
 ### Screenshots
 
 - Browse Trade Me Listings:
+
 ![Browse Listings!](https://github.com/MrMCandR/Trade-Me-Task/blob/master/screenshots/browse_listings.png)
 
 - Navigate Category Structures:
+
 ![Navigate Categories!](https://github.com/MrMCandR/Trade-Me-Task/blob/master/screenshots/sub_categories.png)
 
-- Universal Size Class Support
+- Universal Size Class Support:
+
 ![Universal Size Classes!](https://github.com/MrMCandR/Trade-Me-Task/blob/master/screenshots/size_classes.png)
 
 - Obligatory Dark Mode Support 🌙
+
 ![Dark Mode FTW](https://github.com/MrMCandR/Trade-Me-Task/blob/master/screenshots/dark_mode.png)
 
 ### Dependencies
